@@ -2,6 +2,8 @@
 
 The working folder is `C:\Users\artib\BAR\BarbOS`. The GitHub repository at https://github.com/Barscrewl/BarbOS was empty when this work began. The code and public ratings are published here. Raw replay data, chat, account IDs, and local calibration artifacts are not published. No game installation was changed.
 
+- [SMRTBARb bonus ratings only](public/barb_bonuses.csv)
+- [Match summaries showing each AI team and shared bonus](public/matches.csv)
 - [View the ratings list](public/ratings.csv)
 - [Download ratings CSV](https://raw.githubusercontent.com/Barscrewl/BarbOS/main/public/ratings.csv)
 - [Public ratings JSON](public/ratings.json)
@@ -88,3 +90,11 @@ For a fresh environment, create a venv using Python 3.9+ and install `requiremen
 Sources: [BAR rating guide](https://www.beyondallreason.info/guide/rating-and-lobby-balance), [OpenSkill installation](https://openskill.me/en/v5.0.1/installation.html), [models API](https://openskill.me/en/v5.0.1/api/openskill/models/index.html), [manual](https://openskill.me/en/v5.0.1/manual.html). Binary parsing follows the locally installed Recoil source definitions under `C:\Users\artib\BAR\bar-RecoilEngine\rts\System\LoadSave\demofile.h` and `rts\Net\Protocol\NetMessageTypes.h` / `BaseNetProtocol.cpp`.
 
 The shared link initially returned only a preview shell. The owner subsequently pasted its discussion, and the primary run was updated to its fixed-seed, human-only persistence policy. No AI/game files were installed or changed.
+
+## Reading SMRTBARb bonuses
+
+Bot instance names such as `SMRTBARbstable(1)` are labels only; they do not identify rated opponents. Rating identity is SMRTBARb plus resource bonus and configuration (with AI version/profile retained when declared). The public CSV now has explicit `entity_type`, `name`, `bonus_percent`, `ai_name`, `ai_version`, and `profile` columns. A bot row reads `AI bonus, SMRTBARb +50, 50, SMRTBARb, unknown, unknown`. Its OS=20 applies to each bot, not to the whole team.
+
+`public/barb_bonuses.csv` contains only the bonus configurations, sorted by bonus. `public/matches.csv` summarizes the AI team: for a uniform team, `8 x SMRTBARb +50` with `shared_bonus_percent=50`; mixed teams show each bonus/count and leave the shared bonus blank. The JSON composition column preserves version/profile for future distinctions without using lobby instance names as identity. Raw data still preserves individual seats and original names for traceability.
+
+Public human rows now also include BAR account IDs, as authorized by the owner. Replay chat remains local. Run `.\.venv\Scripts\python.exe export_public.py` after rerating to refresh all public exports.

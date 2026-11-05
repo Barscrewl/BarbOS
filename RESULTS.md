@@ -38,7 +38,7 @@ Every bonus/configuration uses a fixed seed, sigma=1. Non-anchor seeds are provi
 
 68 matches have stop/cheat signals. Signals require review and do not establish wrongdoing. Four damaged gzip replays were recovered as partial match entries and excluded. Four in-period zero-byte files have no readable roster or cache and appear only in scan_manifest.json. No actual admin cheating judgments have been entered.
 
-The owner supplied the shared discussion text after the first run. The primary output now implements human-only persistence and frozen versioned opponent seeds. The initial joint-learning run is preserved under data/calibration_baseline. The GitHub repository was empty; no results have been pushed.
+The owner supplied the shared discussion text after the first run. The primary output now implements human-only persistence and frozen versioned opponent seeds. The initial joint-learning run is preserved under data/calibration_baseline. Public ratings and code are published on GitHub; raw replay data remains local.
 
 This is a custom anchored Plackett-Luce run, not BAR's official rating service or an exact reproduction of its server settings. All bot posteriors are discarded. Provisional non-anchor seeds come from a one-pass joint OpenSkill fit to the first 80% of eligible matches; their fitted latent means are retained and seed sigma set to 1. That preliminary fit uses a tied-seat approximation and is not final statistical calibration. Declared AI versions/profiles are keys, but almost all replays omit both. Unknown versions remain explicitly unknown; binary hashes cannot be recovered. Maps are retained for evaluation, not assigned separate human ratings.
 
