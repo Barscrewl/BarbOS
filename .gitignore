@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.tmp
+shared-discussion.html
+
+data/
+BARBOS-CURRENT.txt
