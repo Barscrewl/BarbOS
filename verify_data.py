@@ -26,8 +26,10 @@ for m in h['matches']:
 assert r['metadata']['dataset_sha256']==hashlib.sha256((p/'matches.json').read_bytes()).hexdigest()
 corrupt={m['match_id'] for m in d['matches'] if m.get('compression_error')};assert len(corrupt)==d['metadata']['compression_integrity_errors']
 assert corrupt<={m['match_id'] for m in h['excluded']}
-current={str(x) for x in barbos.DEMOS.glob('*.sdfz')};snapshot={x['path'] for x in mf['files']}
-changed=[x['path'] for x in selected if pathlib.Path(x['path']).stat().st_size!=x['bytes'] or pathlib.Path(x['path']).stat().st_mtime_ns!=x['mtime_ns']]
+# Rows scanned on another machine (e.g. GreenParrots) are not on this PC's demo folder.
+local=[x for x in mf['files'] if x.get('machine','VENGEANCE')=='VENGEANCE']
+current={str(x) for x in barbos.DEMOS.glob('*.sdfz')};snapshot={x['path'] for x in local}
+changed=[x['path'] for x in selected if x.get('machine','VENGEANCE')=='VENGEANCE' and (pathlib.Path(x['path']).stat().st_size!=x['bytes'] or pathlib.Path(x['path']).stat().st_mtime_ns!=x['mtime_ns'])]
 assert not changed,changed
 # Rating replay must be deterministic apart from its generation timestamp.
 args=type('Args',(),{'output':p})();barbos.rate(args)

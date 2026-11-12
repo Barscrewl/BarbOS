@@ -1,6 +1,6 @@
 # BarbOS replay dataset and anchored ratings
 
-The working folder is `C:\Users\artib\BAR\BarbOS`. The GitHub repository at https://github.com/Barscrewl/BarbOS was empty when this work began. The code and public ratings are published here. Raw replay data, chat, account IDs, and local calibration artifacts are not published. No game installation was changed.
+The working folder is `C:\Users\artib\BAR\BarbOS`. The GitHub repository at https://github.com/Barscrewl/BarbOS was empty when this work began. The code and public ratings are published here. The replay dataset is published without chat as data/matches.json.gz; chat and local calibration artifacts stay local. No game installation was changed.
 
 - [SMRTBARb bonus ratings only](public/barb_bonuses.csv)
 - [Match summaries showing each AI team and shared bonus](public/matches.csv)
@@ -12,7 +12,11 @@ The working folder is `C:\Users\artib\BAR\BarbOS`. The GitHub repository at http
 - [Public ratings JSON](public/ratings.json)
 - [Results and calibration limitations](RESULTS.md)
 
-These are provisional PvE ratings, not official BAR ratings. Displayed OS is mu minus sigma. Raw datasets described below are generated locally and are excluded from this repository.
+These are provisional PvE ratings, not official BAR ratings. Displayed OS is mu minus sigma. Apart from data/matches.json.gz and data/matches_index.csv, the datasets described below are generated locally and are excluded from this repository.
+
+## Published replay dataset
+
+`data/matches.json.gz` is the full qualifying-match dataset (same schema as the local `data/matches.json`) with only the `chat` field removed; `data/matches_index.csv` is its one-row-per-match index. Since 2026-11-12 it combines two machines: VENGEANCE (the owner's PC) and GreenParrots. Each entry's `sources[].machine` says which PC's recording it came from; a game recorded on both PCs is one entry with both sources (match_id is the replay's game ID). To add replays: run `incremental_extract.py <demos folder> <first filename date, e.g. 2026-11-12> <out.json>` on the machine that holds them, then `merge_matches.py <label> <out.json>` on the machine holding `data/`, then `barbos.py rate`, `report.py`, `export_public.py`, `verify_data.py`.
 
 ## Files
 

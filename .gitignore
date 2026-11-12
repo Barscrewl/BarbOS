@@ -3,5 +3,8 @@ __pycache__/
 *.tmp
 shared-discussion.html
 
-data/
+# Raw local data stays local; the chat-free replay dataset and its index are published.
+data/*
+!data/matches.json.gz
+!data/matches_index.csv
 BARBOS-CURRENT.txt
