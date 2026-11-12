@@ -4,6 +4,7 @@ The working folder is `C:\Users\artib\BAR\BarbOS`. The GitHub repository at http
 
 - [SMRTBARb bonus ratings only](public/barb_bonuses.csv)
 - [Match summaries showing each AI team and shared bonus](public/matches.csv)
+- [Top-25 leaderboard (15+ games, AI bonuses and select players shown)](public/leaderboard_top25.txt)
 - [View the ratings list](public/ratings.csv)
 - [Ratings with over 15 games (16+), sorted by match rating](public/ratings_over_15_games.csv)
 - [All ratings sorted by mu](public/ratings_by_mu.csv)

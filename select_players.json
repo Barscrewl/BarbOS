@@ -1,0 +1,8 @@
+{
+  "note": "Owner's select players, always shown on the top-25 leaderboard; under 15 games they get an 'as if 15 games' rating (see leaderboard.py). Owner 2026-11-12.",
+  "players": [
+    {"name": "Mardock", "account_id": 83598},
+    {"name": "[SMRT]Felnious", "account_id": 181810},
+    {"name": "[V]ic", "account_id": 241767}
+  ]
+}
