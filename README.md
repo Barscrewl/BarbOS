@@ -62,6 +62,12 @@ Reviews in `admin_reviews.json` persist through extraction. The effective review
 
 ## Rating policy
 
+**Primary lists since 2026-11-12 (owner's call):** every SMRTBARb bonus configuration learns. Its mu and sigma vary from match to match; only +50 stays fixed at mu 21, sigma 1. `varying_ratings.py` starts each configuration at its seed mean (`barbos-fixed-v2`, sigma 25/3), rates all eight seats with the normal OpenSkill 5.0.1 PlackettLuce update and averages their posteriors once per match. The results are in `data/varying/` and `public/*.csv`. `seeds_v2.py` added seeds for the bonus levels that v1 lacked (+10/+15/+25/+35/+63/+68/+78), using the same anchored joint fit over all eligible matches; the v1 seeds are unchanged and kept in `data/bot_seeds_v1.json`. The frozen-seed, human-only run described below is still produced (`barbos.py rate`) and published in `public/fixed_seed/`.
+
+Rerun order: `barbos.py rate`, `varying_ratings.py`, `report.py`, `export_public.py`, `verify_data.py`.
+
+### Frozen-seed run (previous primary)
+
 The primary run now follows the supplied discussion: separate human PvE ratings, one rating object per actual bot, and **human-only posterior persistence**. It uses `openskill==5.0.1` and `PlackettLuce.rate(teams, ranks=...)` chronologically. The original version was retained because the explicit request linked the 5.0.1 documentation; no silent switch to 6.2.0 was made.
 
 Every bot configuration has a frozen mean and uncertainty in `data/bot_seeds.json`, seed version `barbos-fixed-v1`. Configurations key on shortname, declared AI version, difficulty profile, and bonus. Almost all historical start scripts omit version and profile, so both are explicitly `unknown`; installed modern AI files are not used to invent historical versions. All +50 seeds are enforced at mu=21, sigma=1, displayed rating 20. The other seeds are provisional, not owner-specified strengths.

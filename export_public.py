@@ -20,18 +20,20 @@ def write_csv(path,rows):
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader()
         for row in rows:w.writerow({k:json.dumps(v,ensure_ascii=False) if isinstance(v,(dict,list)) else v for k,v in row.items()})
 
-def generate():
-    p=ROOT/'public';p.mkdir(exist_ok=True)
-    read=lambda name:json.loads((ROOT/'data'/name).read_text(encoding='utf8'))
-    ratings=read('ratings.json');seeds=read('bot_seeds.json')['seeds'];dataset=read('matches.json');history=read('rating_history.json')
+def generate(ratings_dir=ROOT/'data'/'varying',p=ROOT/'public'):
+    """Primary lists come from the varying-bot run (data/varying); the frozen-seed run is
+    exported to public/fixed_seed with generate(ROOT/'data',ROOT/'public'/'fixed_seed')."""
+    p.mkdir(parents=True,exist_ok=True)
+    read=lambda name,d=ROOT/'data':json.loads((d/name).read_text(encoding='utf8'))
+    ratings=read('ratings.json',ratings_dir);seeds=read('bot_seeds.json')['seeds'];dataset=read('matches.json');history=read('rating_history.json',ratings_dir)
     rows=[]
     for r in ratings['ratings']:
-        bot=r['fixed'];config=seeds[r['key']]['configuration'] if bot else {}
+        bot=r['key'].startswith('ai:');config=seeds[r['key']]['configuration'] if bot else {}
         label=f"{config['short_name']} +{config['bonus_percent']:g}" if bot else r['names'][-1]
         if bot and config['ai_version']!='unknown':label+=f" ({config['ai_version']})"
         if bot and config['profile']!='unknown':label+=f" [{config['profile']}]"
         row=dict(entity_type='AI bonus' if bot else 'human',name=label,bonus_percent=config.get('bonus_percent'),ai_name=config.get('short_name'),ai_version=config.get('ai_version'),profile=config.get('profile'),account_id=r['key'].split(':',1)[1] if not bot and r['key'].startswith('human:') else None,names=label if bot else ' | '.join(r['names']))
-        row.update({k:r[k] for k in ('mu','sigma','match_rating','leaderboard_rating','games','wins','losses','fixed','seed_status')});row['seed_version']=r.get('seed_version');rows.append(row)
+        row.update({k:r.get(k) for k in ('mu','sigma','match_rating','leaderboard_rating','games','wins','losses','fixed','seed_status')});row['seed_version']=r.get('seed_version');rows.append(row)
     write_csv(p/'ratings.csv',rows)
     write_csv(p/'ratings_by_mu.csv',sorted(rows,key=lambda r:r['mu'],reverse=True))
     write_csv(p/'ratings_by_leaderboard_rating.csv',sorted(rows,key=lambda r:r['leaderboard_rating'],reverse=True))
@@ -45,6 +47,8 @@ def generate():
         matches.append(dict(match_id=m['match_id'],started_at_utc=m['started_at_utc'],started_at_local=m['started_at_local'],map=m['map'],duration_seconds=m['duration_seconds'],human_count=len(m['players']),ai_team=summary['ai_team'],shared_bonus_percent=summary['shared_bonus_percent'],mixed_bonuses=summary['mixed_bonuses'],ai_count=summary['ai_count'],ai_composition=summary['composition'],observed_result=m['observed_outcome']['result'],rated=m['match_id'] in used,exclusion_reasons=' | '.join(excluded.get(m['match_id'],[]))))
     write_csv(p/'matches.csv',matches)
     assert all('SMRTBARbstable(' not in r['name'] for r in bots)
-    assert next(r for r in bots if r['bonus_percent']==50)['match_rating']==20
+    assert next(r for r in bots if r['bonus_percent']==50)['match_rating']==20 and next(r for r in bots if r['bonus_percent']==50)['fixed']
     print(f'Published exports: {len(rows)} ratings, {len(bots)} bonus configurations, {len(matches)} match summaries')
-if __name__=='__main__':generate()
+if __name__=='__main__':
+    generate()
+    generate(ROOT/'data',ROOT/'public'/'fixed_seed')
