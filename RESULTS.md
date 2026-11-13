@@ -2,9 +2,9 @@
 
 ## Primary ratings: all bots learn, +50 fixed (owner 2026-11-12)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; only +50 is fixed at mu 21, sigma 1. Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,021** matches, **1,726** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; only +50 is fixed at mu 21, sigma 1. Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,022** matches, **1,727** humans.
 
-Chronological prediction on the last 205 rated matches: Brier 0.236 vs 0.250 for constant 50%; mean predicted human win 48.4%, observed 45.4%.
+Chronological prediction on the last 205 rated matches: Brier 0.235 vs 0.250 for constant 50%; mean predicted human win 48.3%, observed 44.9%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
@@ -12,7 +12,7 @@ Chronological prediction on the last 205 rated matches: Brier 0.236 vs 0.250 for
 | +15 | 18.60 | 26.89 | 8.29 | 1 | 1 |
 | +25 | 19.48 | 27.07 | 7.59 | 20 | 12 |
 | +30 | 14.47 | 22.47 | 8.00 | 9 | 3 |
-| +35 | 21.48 | 28.40 | 6.92 | 51 | 37 |
+| +35 | 21.83 | 28.73 | 6.90 | 52 | 38 |
 | +40 | 10.64 | 18.41 | 7.77 | 16 | 3 |
 | +45 | 15.45 | 22.74 | 7.29 | 28 | 13 |
 | +48 | 14.28 | 22.57 | 8.28 | 1 | 0 |
@@ -39,9 +39,9 @@ Chronological prediction on the last 205 rated matches: Brier 0.236 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,151** .sdfz files. Preserved **1,227** qualifying match entries. Rated **1,021**; excluded **206** pending review or because the result/layout/data is unsuitable.
+Scanned **5,153** .sdfz files. Preserved **1,229** qualifying match entries. Rated **1,022**; excluded **207** pending review or because the result/layout/data is unsuitable.
 
-Rated results: **465 human wins**, **556 AI wins**. Humans rated: **1,726**.
+Rated results: **465 human wins**, **557 AI wins**. Humans rated: **1,727**.
 
 SMRTBARb +50 is fixed at **mu 21, sigma 1, match rating 20** for each of the eight seats. All rated entities connect to that anchor through the match graph. Human priors are mu 25, sigma 25/3; lobby PvP ratings are preserved as context, not used as BarbOS priors.
 
@@ -55,7 +55,7 @@ Every bonus/configuration uses a fixed seed, sigma=1. Non-anchor seeds are provi
 | +15 | 24.99 (fixed) | 25.99 | 1.00 | 1 | 1 |
 | +25 | 25.86 (fixed) | 26.86 | 1.00 | 20 | 12 |
 | +30 | 21.09 (fixed) | 22.09 | 1.00 | 9 | 3 |
-| +35 | 27.75 (fixed) | 28.75 | 1.00 | 51 | 37 |
+| +35 | 27.75 (fixed) | 28.75 | 1.00 | 52 | 38 |
 | +40 | 21.51 (fixed) | 22.51 | 1.00 | 16 | 3 |
 | +45 | 21.21 (fixed) | 22.21 | 1.00 | 28 | 13 |
 | +48 | 22.70 (fixed) | 23.70 | 1.00 | 1 | 0 |
@@ -89,8 +89,8 @@ This is a custom anchored Plackett-Luce run, not BAR's official rating service o
 
 | Flag | Matches |
 |---|---:|
-| nondecisive_or_unknown_winner | 170 |
-| no_decisive_winner | 167 |
+| nondecisive_or_unknown_winner | 171 |
+| no_decisive_winner | 168 |
 | stop_or_cheat_signal_requires_review | 91 |
 | no_startplaying_packet | 64 |
 | shared_human_team_requires_model | 12 |
@@ -107,9 +107,9 @@ Counts overlap: a match may have several flags.
 
 ## Forward evaluation
 
-Seeds were calibrated on 630 earlier eligible matches; 370 later matches were predicted before their human rating updates.
+Seeds were calibrated on 630 earlier eligible matches; 371 later matches were predicted before their human rating updates.
 
-Mean predicted human win probability: 46.4%; observed human wins: 45.1%. Brier score: 0.277, versus 0.250 for constant 50% predictions (lower is better).
+Mean predicted human win probability: 46.3%; observed human wins: 45.0%. Brier score: 0.276, versus 0.250 for constant 50% predictions (lower is better).
 
 4 heldout matches used at least one uncalibrated default seed. Detailed evaluation by map, configuration, team size and probability bin is in data/prediction_evaluation.json.
 

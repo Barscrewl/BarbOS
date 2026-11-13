@@ -23,16 +23,16 @@
  20  hatow                   22.16  29.15  6.99   30   20-10
  21  Covewolf                22.14  28.46  6.32   45   27-18
  22  qruntingsquid           21.89  29.43  7.54   18    12-6
-     SMRTBARb +35 (AI)       21.48  28.40  6.92   51   37-14
+     SMRTBARb +35 (AI)       21.83  28.73  6.90   52   38-14
  23  LeftSock                21.14  28.57  7.43   22    13-9
  24  [APM]erevos             21.07  28.11  7.05   24    17-7
  25  [SMRT]IOS_Client        20.96  28.48  7.52   23   10-13
   ...
  34  [V]ic                   18.93  24.85  5.92   72   47-25
   ...
- 67  Mardock *               14.30  21.79  7.49    2     0-2
+ 69  Mardock *               14.25  21.79  7.54    2     0-2
   ...
- 79  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
+ 80  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
 
-* Mardock: as if 15 games (real: 2) (sigma 7.49 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.54 = median of 15-game players)
 ```
