@@ -1,6 +1,6 @@
 """Merge extra match files into BarbOS data/matches.json (dedupe on match_id, merge sources,
 sort by start time). Also appends scan rows to scan_manifest.json. Usage: merge_matches.py label file [file...]"""
-import sys, json, pathlib, collections, datetime as dt
+import sys, json, gzip, pathlib, collections, datetime as dt
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import barbos
 data = pathlib.Path(__file__).resolve().parent / 'data'
@@ -12,7 +12,8 @@ known_paths = {r['path'] for r in mf['files']}
 added = merged_sources = 0
 reviews = json.loads((data/'admin_reviews.json').read_text(encoding='utf8'))
 for f in sys.argv[2:]:
-    extra = json.loads(pathlib.Path(f).read_text(encoding='utf8'))
+    fp = pathlib.Path(f)  # .json or .json.gz (sync watcher hand-off files)
+    extra = json.loads(gzip.open(fp, 'rt', encoding='utf8').read() if fp.suffix == '.gz' else fp.read_text(encoding='utf8'))
     for m in extra['matches']:
         prev = by_id.get(m['match_id'])
         if prev is None:
@@ -25,8 +26,9 @@ for f in sys.argv[2:]:
                     prev['sources'].append(s); merged_sources += 1
                     if prev['observed_outcome']['result'] != m['observed_outcome']['result'] and 'duplicate_recording_outcome_disagreement' not in prev['automatic_flags']:
                         prev['automatic_flags'].append('duplicate_recording_outcome_disagreement')
-    rows = {r['path']: r for r in mf['files']}
-    for r in extra.get('files', []): rows[r['path']] = r  # newer scan wins (e.g. a once-live recording)
+    key = lambda r: (r.get('machine', 'VENGEANCE'), r['path'])  # both PCs use the same demos path
+    rows = {key(r): r for r in mf['files']}
+    for r in extra.get('files', []): rows[key(r)] = r  # newer scan wins (e.g. a once-live recording)
     mf['files'] = sorted(rows.values(), key=lambda r: r['path'])
 ms = sorted(by_id.values(), key=lambda m: (m['started_at_utc'], m['match_id']))
 md = ds['metadata']

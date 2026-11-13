@@ -17,7 +17,7 @@ These are provisional PvE ratings, not official BAR ratings. Displayed OS is mu 
 
 ## Published replay dataset
 
-`data/matches.json.gz` is the full qualifying-match dataset (same schema as the local `data/matches.json`) with only the `chat` field removed; `data/matches_index.csv` is its one-row-per-match index. Since 2026-11-12 it combines two machines: VENGEANCE (the owner's PC) and GreenParrots. Each entry's `sources[].machine` says which PC's recording it came from; a game recorded on both PCs is one entry with both sources (match_id is the replay's game ID). To add replays: run `incremental_extract.py <demos folder> <first filename date, e.g. 2026-11-12> <out.json>` on the machine that holds them, then `merge_matches.py <label> <out.json>` on the machine holding `data/`, then `barbos.py rate`, `report.py`, `export_public.py`, `verify_data.py`.
+`data/matches.json.gz` is the full qualifying-match dataset (same schema as the local `data/matches.json`) with only the `chat` field removed; `data/matches_index.csv` is its one-row-per-match index. Since 2026-11-12 it combines two machines: VENGEANCE (the owner's PC) and GreenParrots. Each entry's `sources[].machine` says which PC's recording it came from; a game recorded on both PCs is one entry with both sources (match_id is the replay's game ID). To add replays: run `incremental_extract.py <demos folder> <first filename date, e.g. 2026-11-12> <out.json>` on the machine that holds them, then `merge_matches.py <label> <out.json>` on the machine holding `data/`, then `barbos.py rate`, `varying_ratings.py`, `report.py`, `export_public.py`, `leaderboard.py`, `publish_dataset.py`, `verify_data.py`. The automatic replay sync below does all of this every 30 minutes.
 
 ## Files
 
@@ -98,6 +98,15 @@ Set-Location C:\Users\artib\BAR\BarbOS
 # Regression checks:
 .\.venv\Scripts\python.exe -m unittest -q test_barbos
 ```
+
+### Automatic replay sync
+
+`sync/install_task.ps1` registers the scheduled task "BarbOS replay sync" (every 30 min, hidden, BelowNormal priority) that runs `sync/barbos_sync.ps1`. Log: `C:\Users\artib\BAR\BarbOS-sync\sync.log`.
+
+- **Feeder (GreenParrots):** `extract_new.py scan` extracts replays not yet handed off (state in `BAR\BarbOS-sync\state.json`; zero-byte and just-written files wait for a later run) into `BAR\BarbOS-inbox\GreenParrots\<UTC stamp>.json.gz` and pushes it to the **private** repo `Barscrewl/BarbOS-inbox`. Those files include chat; they never go to this public repo.
+- **Writer (VENGEANCE, the only holder of `data/matches.json`):** pulls the inbox, extracts its own new replays (state = `data/scan_manifest.json`), merges everything with `merge_matches.py` (dedupe on match_id, sorted by start time), then runs `barbos.py rate`, `varying_ratings.py`, `report.py`, `export_public.py`, `leaderboard.py`, `publish_dataset.py` (chat-free `data/matches.json.gz`) and `verify_data.py`, and commits and pushes only `public/`, `data/matches.json.gz`, `data/matches_index.csv` and `RESULTS.md`. If any step fails, `matches.json` and `scan_manifest.json` are restored and the inbox files stay unmerged for the next run.
+
+Manual run: `powershell -File sync\barbos_sync.ps1` (add `-NoPush` to test, `-Force` to rerate with nothing new). Remove the task with `sync\install_task.ps1 -Remove`.
 
 For a fresh environment, create a venv using Python 3.9+ and install `requirements.txt`. The checked run used Python 3.14.8, OpenSkill 5.0.1 and tzdata 2026.6. Optional `--demos`, `--output`, and `--workers` arguments control source, output and parallel parsing.
 
