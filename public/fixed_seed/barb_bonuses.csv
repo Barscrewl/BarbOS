@@ -20,7 +20,7 @@ AI bonus,SMRTBARb +68,68.0,SMRTBARb,unknown,unknown,,SMRTBARb +68,25.74221937233
 AI bonus,SMRTBARb +69,69.0,SMRTBARb,unknown,unknown,,SMRTBARb +69,24.467618391143482,1.0,23.467618391143482,21.467618391143482,4,2,2,True,provisional_training_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +70,70.0,SMRTBARb,unknown,unknown,,SMRTBARb +70,23.803672326855345,1.0,22.803672326855345,20.803672326855345,35,20,15,True,provisional_training_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +75,75.0,SMRTBARb,unknown,unknown,,SMRTBARb +75,23.549731961031757,1.0,22.549731961031757,20.549731961031757,22,11,11,True,provisional_training_estimate,barbos-fixed-v2
-AI bonus,SMRTBARb +80,80.0,SMRTBARb,unknown,unknown,,SMRTBARb +80,26.899286503535926,1.0,25.899286503535926,23.899286503535926,11,6,5,True,provisional_training_estimate,barbos-fixed-v2
+AI bonus,SMRTBARb +80,80.0,SMRTBARb,unknown,unknown,,SMRTBARb +80,26.899286503535926,1.0,25.899286503535926,23.899286503535926,12,6,6,True,provisional_training_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +85,85.0,SMRTBARb,unknown,unknown,,SMRTBARb +85,23.397344350515333,1.0,22.397344350515333,20.397344350515333,9,2,7,True,provisional_training_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +90,90.0,SMRTBARb,unknown,unknown,,SMRTBARb +90,25.0,1.0,24.0,22.0,4,2,2,True,uncalibrated_default_prior,barbos-fixed-v2
 AI bonus,SMRTBARb +100,100.0,SMRTBARb,unknown,unknown,,SMRTBARb +100,27.928226492988617,1.0,26.928226492988617,24.928226492988617,15,10,5,True,provisional_training_estimate,barbos-fixed-v2

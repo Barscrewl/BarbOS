@@ -2,9 +2,9 @@
 
 ## Primary ratings: all bots learn, +50 fixed (owner 2026-11-12)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; only +50 is fixed at mu 21, sigma 1. Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **998** matches, **1,691** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; only +50 is fixed at mu 21, sigma 1. Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **999** matches, **1,691** humans.
 
-Chronological prediction on the last 200 rated matches: Brier 0.248 vs 0.250 for constant 50%; mean predicted human win 51.2%, observed 47.0%.
+Chronological prediction on the last 200 rated matches: Brier 0.248 vs 0.250 for constant 50%; mean predicted human win 51.3%, observed 47.0%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
@@ -29,7 +29,7 @@ Chronological prediction on the last 200 rated matches: Brier 0.248 vs 0.250 for
 | +69 | 16.01 | 24.17 | 8.16 | 4 | 2 |
 | +70 | 18.28 | 25.42 | 7.14 | 35 | 20 |
 | +75 | 19.18 | 26.67 | 7.49 | 22 | 11 |
-| +80 | 18.82 | 26.68 | 7.86 | 11 | 6 |
+| +80 | 17.74 | 25.55 | 7.81 | 12 | 6 |
 | +85 | 13.62 | 21.62 | 8.00 | 9 | 2 |
 | +90 | 17.61 | 25.77 | 8.16 | 4 | 2 |
 | +100 | 19.74 | 27.48 | 7.73 | 15 | 10 |
@@ -39,9 +39,9 @@ Chronological prediction on the last 200 rated matches: Brier 0.248 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,122** .sdfz files. Preserved **1,198** qualifying match entries. Rated **998**; excluded **200** pending review or because the result/layout/data is unsuitable.
+Scanned **5,124** .sdfz files. Preserved **1,200** qualifying match entries. Rated **999**; excluded **201** pending review or because the result/layout/data is unsuitable.
 
-Rated results: **459 human wins**, **539 AI wins**. Humans rated: **1,691**.
+Rated results: **460 human wins**, **539 AI wins**. Humans rated: **1,691**.
 
 SMRTBARb +50 is fixed at **mu 21, sigma 1, match rating 20** for each of the eight seats. All rated entities connect to that anchor through the match graph. Human priors are mu 25, sigma 25/3; lobby PvP ratings are preserved as context, not used as BarbOS priors.
 
@@ -72,7 +72,7 @@ Every bonus/configuration uses a fixed seed, sigma=1. Non-anchor seeds are provi
 | +69 | 23.47 (fixed) | 24.47 | 1.00 | 4 | 2 |
 | +70 | 22.80 (fixed) | 23.80 | 1.00 | 35 | 20 |
 | +75 | 22.55 (fixed) | 23.55 | 1.00 | 22 | 11 |
-| +80 | 25.90 (fixed) | 26.90 | 1.00 | 11 | 6 |
+| +80 | 25.90 (fixed) | 26.90 | 1.00 | 12 | 6 |
 | +85 | 22.40 (fixed) | 23.40 | 1.00 | 9 | 2 |
 | +90 | 24.00 (fixed) | 25.00 | 1.00 | 4 | 2 |
 | +100 | 26.93 (fixed) | 27.93 | 1.00 | 15 | 10 |
@@ -89,8 +89,8 @@ This is a custom anchored Plackett-Luce run, not BAR's official rating service o
 
 | Flag | Matches |
 |---|---:|
-| nondecisive_or_unknown_winner | 165 |
-| no_decisive_winner | 162 |
+| nondecisive_or_unknown_winner | 166 |
+| no_decisive_winner | 163 |
 | stop_or_cheat_signal_requires_review | 89 |
 | no_startplaying_packet | 62 |
 | shared_human_team_requires_model | 12 |
@@ -107,9 +107,9 @@ Counts overlap: a match may have several flags.
 
 ## Forward evaluation
 
-Seeds were calibrated on 630 earlier eligible matches; 347 later matches were predicted before their human rating updates.
+Seeds were calibrated on 630 earlier eligible matches; 348 later matches were predicted before their human rating updates.
 
-Mean predicted human win probability: 48.8%; observed human wins: 46.4%. Brier score: 0.283, versus 0.250 for constant 50% predictions (lower is better).
+Mean predicted human win probability: 48.7%; observed human wins: 46.6%. Brier score: 0.283, versus 0.250 for constant 50% predictions (lower is better).
 
 4 heldout matches used at least one uncalibrated default seed. Detailed evaluation by map, configuration, team size and probability bin is in data/prediction_evaluation.json.
 
