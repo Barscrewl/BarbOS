@@ -20,6 +20,12 @@ def write_csv(path,rows):
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader()
         for row in rows:w.writerow({k:json.dumps(v,ensure_ascii=False) if isinstance(v,(dict,list)) else v for k,v in row.items()})
 
+def config_from_key(key):
+    """2026-11-14: a bot configuration first seen after the seeds file was built (e.g. a new bonus level) has no seed entry; the varying run
+    rates it from the default prior, so the export derives its configuration from the key: ai:<name>:version:<v>:profile:<p>:bonus:<n>."""
+    parts=key.split(':');d=dict(zip(parts[2::2],parts[3::2]))
+    return dict(short_name=parts[1],ai_version=d.get('version','unknown'),profile=d.get('profile','unknown'),bonus_percent=float(d.get('bonus',0)))
+
 def generate(ratings_dir=ROOT/'data'/'varying',p=ROOT/'public'):
     """Primary lists come from the varying-bot run (data/varying); the frozen-seed run is
     exported to public/fixed_seed with generate(ROOT/'data',ROOT/'public'/'fixed_seed')."""
@@ -28,7 +34,7 @@ def generate(ratings_dir=ROOT/'data'/'varying',p=ROOT/'public'):
     ratings=read('ratings.json',ratings_dir);seeds=read('bot_seeds.json')['seeds'];dataset=read('matches.json');history=read('rating_history.json',ratings_dir)
     rows=[]
     for r in ratings['ratings']:
-        bot=r['key'].startswith('ai:');config=seeds[r['key']]['configuration'] if bot else {}
+        bot=r['key'].startswith('ai:');config=(seeds[r['key']]['configuration'] if r['key'] in seeds else config_from_key(r['key'])) if bot else {}
         label=f"{config['short_name']} +{config['bonus_percent']:g}" if bot else r['names'][-1]
         if bot and config['ai_version']!='unknown':label+=f" ({config['ai_version']})"
         if bot and config['profile']!='unknown':label+=f" [{config['profile']}]"
