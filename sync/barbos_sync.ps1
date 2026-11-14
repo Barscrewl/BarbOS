@@ -120,6 +120,8 @@ try {
     if (-not (G $Inbox @('pull', '--ff-only', '-q'))) { Log 'inbox pull failed; continuing with the local copy'; Problem 'inbox pull failed' $script:LastOut }
 
     if ($Role -eq 'feeder') {
+        # Feeders keep their BarbOS code current (the writer's clone is where code is edited, so it never pulls itself).
+        if (-not (G $Repo @('pull', '--ff-only', '-q'))) { Log 'BarbOS code pull failed; using the local copy' }
         if ((Ahead $Inbox) -gt 0) { Log "inbox has $(Ahead $Inbox) unpushed commit(s) from an earlier run"; [void](Push $Inbox) }
         $rel = "$Machine\$stamp.json.gz"; $out = Join-Path $Inbox $rel
         New-Item -ItemType Directory -Force (Split-Path $out) | Out-Null
