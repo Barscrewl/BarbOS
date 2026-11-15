@@ -1,6 +1,7 @@
 ﻿entity_type,name,bonus_percent,ai_name,ai_version,profile,account_id,names,mu,sigma,match_rating,leaderboard_rating,games,wins,losses,fixed,seed_status,seed_version
 AI bonus,SMRTBARb +10,10.0,SMRTBARb,unknown,unknown,,SMRTBARb +10,22.789859451052827,8.288347957080079,14.501511493972748,-2.075184420187412,1,0,1,False,provisional_full_data_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +15,15.0,SMRTBARb,unknown,unknown,,SMRTBARb +15,26.887026082575378,8.288915682689801,18.598110399885577,2.0202790345059753,1,1,0,False,provisional_full_data_estimate,barbos-fixed-v2
+AI bonus,SMRTBARb +20,20.0,SMRTBARb,unknown,unknown,,SMRTBARb +20,23.684141206371994,8.291174303212244,15.39296690315975,-1.1893817032647398,1,0,1,False,,barbos-fixed-v2
 AI bonus,SMRTBARb +25,25.0,SMRTBARb,unknown,unknown,,SMRTBARb +25,27.334150512150007,7.39000695411418,19.944143558035826,5.164129649807467,27,17,10,False,provisional_full_data_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +30,30.0,SMRTBARb,unknown,unknown,,SMRTBARb +30,25.4166658095139,7.705548429687624,17.711117379826277,2.300020520451028,17,9,8,False,provisional_training_estimate,barbos-fixed-v2
 AI bonus,SMRTBARb +35,35.0,SMRTBARb,unknown,unknown,,SMRTBARb +35,28.53483412011736,6.825323291373666,21.709510828743696,8.05886424599636,56,41,15,False,provisional_full_data_estimate,barbos-fixed-v2
