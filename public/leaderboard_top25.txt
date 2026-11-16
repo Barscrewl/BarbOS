@@ -29,11 +29,11 @@
  24  iberrie                 21.16  28.71  7.54   22    9-13
  25  LeftSock                21.14  28.57  7.43   22    13-9
   ...
- 33  [V]ic                   18.79  24.52  5.74   80   53-27
+ 38  [V]ic                   17.72  23.43  5.71   81   53-28
   ...
- 66  Mardock *               14.32  21.79  7.47    2     0-2
+ 65  Mardock *               14.34  21.79  7.45    2     0-2
   ...
  80  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
 
-* Mardock: as if 15 games (real: 2) (sigma 7.47 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.45 = median of 15-game players)
 ```
