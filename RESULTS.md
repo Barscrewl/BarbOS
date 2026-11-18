@@ -2,9 +2,9 @@
 
 ## Primary ratings: all bots learn, +50 fixed (owner 2026-11-12)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; only +50 is fixed at mu 21, sigma 1. Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,144** matches, **1,890** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; only +50 is fixed at mu 21, sigma 1. Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,145** matches, **1,892** humans.
 
-Chronological prediction on the last 229 rated matches: Brier 0.274 vs 0.250 for constant 50%; mean predicted human win 43.4%, observed 34.5%.
+Chronological prediction on the last 229 rated matches: Brier 0.274 vs 0.250 for constant 50%; mean predicted human win 43.2%, observed 34.1%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
@@ -23,6 +23,7 @@ Chronological prediction on the last 229 rated matches: Brier 0.274 vs 0.250 for
 | +55 | 22.65 | 27.28 | 4.63 | 212 | 129 |
 | +57 | 12.97 | 21.06 | 8.09 | 8 | 1 |
 | +58 | 19.57 | 27.65 | 8.07 | 8 | 6 |
+| +59 | 17.42 | 25.71 | 8.29 | 1 | 1 |
 | +60 | 22.06 | 26.70 | 4.64 | 201 | 108 |
 | +62 | 15.82 | 23.85 | 8.03 | 7 | 3 |
 | +63 | 12.84 | 20.92 | 8.08 | 9 | 1 |
@@ -41,7 +42,7 @@ Chronological prediction on the last 229 rated matches: Brier 0.274 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,314** .sdfz files. Preserved **1,387** qualifying match entries. Rated **1,138**; excluded **249** pending review or because the result/layout/data is unsuitable.
+Scanned **5,316** .sdfz files. Preserved **1,388** qualifying match entries. Rated **1,138**; excluded **250** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **502 human wins**, **636 AI wins**. Humans rated: **1,882**.
 
