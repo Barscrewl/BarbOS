@@ -25,14 +25,13 @@
  22  [SMRT]IOS_Client        22.09  29.57  7.48   24   11-13
  23  Knochentroke            21.97  28.24  6.27   53   33-20
  24  qruntingsquid           21.89  29.43  7.54   18    12-6
-     SMRTBARb +35 (AI)       21.85  28.33  6.48   76   56-20
  25  LeakyBot                21.64  28.72  7.09   30   18-12
   ...
- 32  [V]ic                   19.44  25.04  5.59   85   57-28
+ 33  [V]ic                   19.44  25.04  5.59   85   57-28
   ...
- 69  Mardock *               14.35  21.79  7.44    2     0-2
+ 70  Mardock *               14.37  21.79  7.43    2     0-2
   ...
- 84  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
+ 85  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
 
-* Mardock: as if 15 games (real: 2) (sigma 7.44 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.43 = median of 15-game players)
 ```
