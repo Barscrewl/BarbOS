@@ -42,7 +42,7 @@ Chronological prediction on the last 230 rated matches: Brier 0.275 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,324** .sdfz files. Preserved **1,394** qualifying match entries. Rated **1,143**; excluded **251** pending review or because the result/layout/data is unsuitable.
+Scanned **5,325** .sdfz files. Preserved **1,395** qualifying match entries. Rated **1,143**; excluded **252** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **504 human wins**, **639 AI wins**. Humans rated: **1,894**.
 
@@ -82,7 +82,7 @@ Every bonus/configuration uses a fixed seed, sigma=1. Non-anchor seeds are provi
 
 ## Data limits
 
-103 matches have stop/cheat signals. Signals require review and do not establish wrongdoing. Four damaged gzip replays were recovered as partial match entries and excluded. Four in-period zero-byte files have no readable roster or cache and appear only in scan_manifest.json. No actual admin cheating judgments have been entered.
+104 matches have stop/cheat signals. Signals require review and do not establish wrongdoing. Four damaged gzip replays were recovered as partial match entries and excluded. Four in-period zero-byte files have no readable roster or cache and appear only in scan_manifest.json. No actual admin cheating judgments have been entered.
 
 The owner supplied the shared discussion text after the first run. The primary output now implements human-only persistence and frozen versioned opponent seeds. The initial joint-learning run is preserved under data/calibration_baseline. Public ratings and code are published on GitHub; raw replay data remains local.
 
@@ -94,7 +94,7 @@ This is a custom anchored Plackett-Luce run, not BAR's official rating service o
 |---|---:|
 | nondecisive_or_unknown_winner | 207 |
 | no_decisive_winner | 204 |
-| stop_or_cheat_signal_requires_review | 103 |
+| stop_or_cheat_signal_requires_review | 104 |
 | no_startplaying_packet | 80 |
 | shared_human_team_requires_model | 17 |
 | additional_ai_participants | 8 |
