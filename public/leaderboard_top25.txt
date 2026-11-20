@@ -6,32 +6,33 @@
   4  [Crd]MourningPhoenix    29.72  36.35  6.64   40   30-10
   5  Pyroglacious            29.72  36.23  6.51   44    35-9
   6  Rhinehard               28.02  34.89  6.87   46   34-12
-  7  [SMRT]SharpPencil       27.10  31.47  4.37  186   98-88
-  8  Dive                    27.06  31.67  4.61  140   81-59
+  7  Dive                    27.66  32.26  4.60  141   82-59
+  8  [SMRT]SharpPencil       27.10  31.47  4.37  186   98-88
   9  FRODODOR                26.47  32.83  6.36   48   32-16
  10  SK10                    26.29  33.41  7.12   23    17-6
- 11  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
- 12  Skullhead               24.10  31.09  6.98   29   18-11
- 13  No_Air                  23.90  30.28  6.39   53   31-22
+ 11  No_Air                  25.06  31.41  6.35   54   32-22
+ 12  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
+ 13  Skullhead               24.10  31.09  6.98   29   18-11
  14  SauceDispenser          23.64  31.30  7.65   15     9-6
  15  [iS]BarscrewlSports     23.62  29.25  5.64   85   55-30
  16  Sinobi                  23.16  28.36  5.20  102   56-46
-     SMRTBARb +55 (AI)       22.82  27.45  4.62  213  130-83
  17  [APM]erevos             22.82  29.72  6.89   27    20-7
  18  MVPete                  22.69  30.11  7.41   20    15-5
  19  Erekim                  22.64  30.33  7.69   15    10-5
+     SMRTBARb +55 (AI)       22.24  26.86  4.61  214  130-84
  20  hatow                   22.16  29.15  6.99   30   20-10
  21  Covewolf                22.14  28.46  6.32   45   27-18
  22  [SMRT]IOS_Client        22.09  29.57  7.48   24   11-13
  23  Knochentroke            21.97  28.24  6.27   53   33-20
  24  qruntingsquid           21.89  29.43  7.54   18    12-6
+     SMRTBARb +35 (AI)       21.70  28.07  6.36   83   61-22
  25  LeakyBot                21.64  28.72  7.09   30   18-12
   ...
- 34  [V]ic                   19.44  25.04  5.59   85   57-28
+ 32  [V]ic                   19.44  25.04  5.59   85   57-28
   ...
- 70  Mardock *               14.37  21.79  7.43    2     0-2
+ 72  Mardock *               14.35  21.79  7.44    2     0-2
   ...
- 85  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
+ 86  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
 
-* Mardock: as if 15 games (real: 2) (sigma 7.43 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.44 = median of 15-game players)
 ```
