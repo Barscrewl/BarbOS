@@ -14,13 +14,13 @@
  12  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
  13  Skullhead               24.10  31.09  6.98   29   18-11
  14  SauceDispenser          23.64  31.30  7.65   15     9-6
- 15  [iS]BarscrewlSports     23.62  29.25  5.64   85   55-30
- 16  Sinobi                  23.16  28.36  5.20  102   56-46
+ 15  Sinobi                  23.16  28.36  5.20  102   56-46
+ 16  [iS]BarscrewlSports     23.15  28.77  5.62   86   55-31
  17  [APM]erevos             22.82  29.72  6.89   27    20-7
  18  MVPete                  22.69  30.11  7.41   20    15-5
  19  Erekim                  22.64  30.33  7.69   15    10-5
+     SMRTBARb +35 (AI)       22.46  28.79  6.33   85   63-22
      SMRTBARb +55 (AI)       22.24  26.86  4.61  214  130-84
-     SMRTBARb +35 (AI)       22.16  28.51  6.34   84   62-22
  20  hatow                   22.16  29.15  6.99   30   20-10
  21  Covewolf                22.14  28.46  6.32   45   27-18
  22  [SMRT]IOS_Client        22.09  29.57  7.48   24   11-13
@@ -32,7 +32,7 @@
   ...
  72  Mardock *               14.35  21.79  7.44    2     0-2
   ...
- 86  [SMRT]Felnious          12.59  20.24  7.66   17    4-13
+ 89  [SMRT]Felnious          11.73  19.35  7.61   18    4-14
 
 * Mardock: as if 15 games (real: 2) (sigma 7.44 = median of 15-game players)
 ```
