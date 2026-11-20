@@ -1,12 +1,12 @@
 ```
   #  Player                     OS     mu sigma    G     W-L
-  1  Sinbearer               34.58  41.04  6.45   48   36-12
+  1  Sinbearer               33.82  40.24  6.43   49   36-13
   2  KingBenjai              31.78  39.04  7.25   26    21-5
   3  Aslan3                  30.18  37.08  6.90   37    32-5
   4  [Crd]MourningPhoenix    29.72  36.35  6.64   40   30-10
   5  Pyroglacious            29.72  36.23  6.51   44    35-9
   6  Rhinehard               28.02  34.89  6.87   46   34-12
-  7  Dive                    27.66  32.26  4.60  141   82-59
+  7  Dive                    27.26  31.85  4.59  142   82-60
   8  [SMRT]SharpPencil       27.10  31.47  4.37  186   98-88
   9  FRODODOR                26.47  32.83  6.36   48   32-16
  10  SK10                    26.29  33.41  7.12   23    17-6
@@ -15,10 +15,10 @@
  13  Skullhead               24.10  31.09  6.98   29   18-11
  14  SauceDispenser          23.64  31.30  7.65   15     9-6
  15  Sinobi                  23.16  28.36  5.20  102   56-46
- 16  [iS]BarscrewlSports     23.15  28.77  5.62   86   55-31
- 17  [APM]erevos             22.82  29.72  6.89   27    20-7
- 18  MVPete                  22.69  30.11  7.41   20    15-5
- 19  Erekim                  22.64  30.33  7.69   15    10-5
+ 16  [APM]erevos             22.82  29.72  6.89   27    20-7
+ 17  MVPete                  22.69  30.11  7.41   20    15-5
+ 18  Erekim                  22.64  30.33  7.69   15    10-5
+ 19  [iS]BarscrewlSports     22.56  28.16  5.60   87   55-32
      SMRTBARb +35 (AI)       22.46  28.79  6.33   85   63-22
      SMRTBARb +55 (AI)       22.24  26.86  4.61  214  130-84
  20  hatow                   22.16  29.15  6.99   30   20-10
@@ -32,7 +32,7 @@
   ...
  72  Mardock *               14.35  21.79  7.44    2     0-2
   ...
- 89  [SMRT]Felnious          11.73  19.35  7.61   18    4-14
+ 94  [SMRT]Felnious          10.67  18.24  7.57   19    4-15
 
 * Mardock: as if 15 games (real: 2) (sigma 7.44 = median of 15-game players)
 ```
