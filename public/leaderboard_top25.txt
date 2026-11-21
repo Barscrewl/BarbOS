@@ -7,7 +7,7 @@
   5  [Crd]MourningPhoenix    29.72  36.35  6.64   40   30-10
   6  [SMRT]SharpPencil       28.21  32.54  4.33  189  101-88
   7  Rhinehard               28.02  34.89  6.87   46   34-12
-  8  Dive                    26.69  31.11  4.42  153   89-64
+  8  Dive                    26.86  31.27  4.41  154   90-64
   9  FRODODOR                26.47  32.83  6.36   48   32-16
  10  Skullhead               26.42  33.25  6.83   32   21-11
  11  SK10                    26.29  33.41  7.12   23    17-6
@@ -28,11 +28,11 @@
  24  Knochentroke            21.76  27.90  6.14   56   35-21
  25  LeakyBot                21.64  28.72  7.09   30   18-12
   ...
- 30  [V]ic                   20.20  25.72  5.53   88   60-28
+ 32  [V]ic                   20.20  25.72  5.53   88   60-28
   ...
- 76  Mardock *               14.41  21.79  7.38    2     0-2
+ 76  Mardock *               14.39  21.79  7.41    2     0-2
   ...
  96  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 2) (sigma 7.38 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.41 = median of 15-game players)
 ```
