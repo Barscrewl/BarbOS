@@ -30,9 +30,9 @@
   ...
  30  [V]ic                   20.20  25.72  5.53   88   60-28
   ...
- 76  Mardock *               14.39  21.79  7.41    2     0-2
+ 76  Mardock *               14.38  21.79  7.42    2     0-2
   ...
- 94  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
+ 95  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 2) (sigma 7.41 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.42 = median of 15-game players)
 ```
