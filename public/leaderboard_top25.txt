@@ -23,15 +23,15 @@
  21  Erekim                  22.64  30.33  7.69   15    10-5
  22  hatow                   22.16  29.15  6.99   30   20-10
  23  Covewolf                22.14  28.46  6.32   45   27-18
+     SMRTBARb +55 (AI)       22.09  26.59  4.49  235  145-90
  24  Vinagrito               22.09  28.48  6.39   33   21-12
-     SMRTBARb +55 (AI)       21.96  26.46  4.50  234  144-90
  25  qruntingsquid           21.89  29.43  7.54   18    12-6
   ...
  31  [V]ic                   20.36  25.87  5.51   89   61-28
   ...
- 78  Mardock *               14.34  21.79  7.45    2     0-2
+ 78  Mardock *               14.35  21.79  7.44    2     0-2
   ...
  97  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 2) (sigma 7.45 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.44 = median of 15-game players)
 ```
