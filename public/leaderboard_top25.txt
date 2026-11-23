@@ -19,9 +19,9 @@
  17  Sinobi                  23.16  28.36  5.20  102   56-46
  18  [APM]erevos             22.82  29.72  6.89   27    20-7
  19  [iS]BarscrewlSports     22.82  28.40  5.58   88   56-32
-     SMRTBARb +55 (AI)       22.81  27.33  4.51  231  143-88
  20  MVPete                  22.69  30.11  7.41   20    15-5
  21  Erekim                  22.64  30.33  7.69   15    10-5
+     SMRTBARb +55 (AI)       22.18  26.69  4.51  232  143-89
  22  hatow                   22.16  29.15  6.99   30   20-10
  23  Covewolf                22.14  28.46  6.32   45   27-18
  24  Vinagrito               22.09  28.48  6.39   33   21-12
@@ -29,9 +29,9 @@
   ...
  31  [V]ic                   20.36  25.87  5.51   89   61-28
   ...
- 77  Mardock *               14.38  21.79  7.42    2     0-2
+ 78  Mardock *               14.37  21.79  7.43    2     0-2
   ...
  97  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 2) (sigma 7.42 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.43 = median of 15-game players)
 ```
