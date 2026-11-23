@@ -1,6 +1,6 @@
 ```
   #  Player                     OS     mu sigma    G     W-L
-  1  Sinbearer               34.16  40.55  6.39   50   37-13
+  1  Sinbearer               34.45  40.81  6.36   51   38-13
   2  KingBenjai              31.78  39.04  7.25   26    21-5
   3  Aslan3                  31.64  38.40  6.75   40    35-5
   4  Pyroglacious            29.97  36.46  6.48   45    36-9
