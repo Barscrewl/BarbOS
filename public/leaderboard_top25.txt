@@ -13,8 +13,8 @@
  11  FRODODOR                26.47  32.83  6.36   48   32-16
  12  No_Air                  25.33  31.48  6.15   60   34-26
  13  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
- 14  Knochentroke            24.71  30.58  5.86   70   46-24
- 15  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
+ 14  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
+ 15  Knochentroke            23.84  29.69  5.85   71   46-25
  16  SauceDispenser          23.64  31.30  7.65   15     9-6
  17  Sinobi                  23.16  28.36  5.20  102   56-46
  18  [APM]erevos             22.82  29.72  6.89   27    20-7
