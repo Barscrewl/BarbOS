@@ -11,8 +11,8 @@
   9  Dive                    27.14  31.52  4.39  157   93-64
  10  FRODODOR                26.47  32.83  6.36   48   32-16
  11  SK10                    26.29  33.41  7.12   23    17-6
- 12  No_Air                  25.09  31.34  6.25   57   33-24
- 13  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
+ 12  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
+ 13  No_Air                  24.74  30.96  6.22   58   33-25
  14  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
  15  Knochentroke            23.67  29.66  6.00   62   40-22
  16  SauceDispenser          23.64  31.30  7.65   15     9-6
@@ -24,13 +24,14 @@
  22  hatow                   22.16  29.15  6.99   30   20-10
  23  Covewolf                22.14  28.46  6.32   45   27-18
  24  Vinagrito               22.09  28.48  6.39   33   21-12
+     SMRTBARb +55 (AI)       22.01  26.48  4.47  239  148-91
  25  qruntingsquid           21.89  29.43  7.54   18    12-6
   ...
  31  [V]ic                   20.36  25.87  5.51   89   61-28
   ...
- 79  Mardock *               14.35  21.79  7.44    2     0-2
+ 79  Mardock *               14.37  21.79  7.43    2     0-2
   ...
  97  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 2) (sigma 7.44 = median of 15-game players)
+* Mardock: as if 15 games (real: 2) (sigma 7.43 = median of 15-game players)
 ```
