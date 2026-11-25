@@ -2,23 +2,23 @@
 
 ## Primary ratings: all bots learn, +50 seeded 21 then varies (owner 2026-11-24)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,285** matches, **2,026** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,287** matches, **2,029** humans.
 
-Chronological prediction on the last 257 rated matches: Brier 0.209 vs 0.250 for constant 50%; mean predicted human win 37.5%, observed 39.7%.
+Chronological prediction on the last 258 rated matches: Brier 0.208 vs 0.250 for constant 50%; mean predicted human win 37.6%, observed 39.9%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
 | +10 | 14.58 | 22.87 | 8.29 | 1 | 0 |
 | +15 | 18.68 | 26.97 | 8.29 | 1 | 1 |
 | +20 | 15.46 | 23.75 | 8.29 | 1 | 0 |
-| +25 | 19.98 | 27.13 | 7.15 | 36 | 23 |
+| +25 | 20.62 | 27.75 | 7.12 | 37 | 24 |
 | +30 | 17.90 | 25.15 | 7.25 | 32 | 18 |
 | +35 | 22.98 | 29.19 | 6.20 | 92 | 68 |
 | +39 | 16.79 | 24.91 | 8.12 | 5 | 3 |
 | +40 | 12.15 | 19.84 | 7.69 | 20 | 4 |
 | +45 | 16.61 | 23.89 | 7.29 | 28 | 13 |
 | +48 | 14.45 | 22.73 | 8.28 | 1 | 0 |
-| +50 | 21.51 | 25.33 | 3.82 | 376 | 200 |
+| +50 | 21.31 | 25.13 | 3.81 | 377 | 200 |
 | +52 | 16.19 | 24.19 | 8.00 | 8 | 4 |
 | +55 | 23.18 | 27.62 | 4.43 | 245 | 151 |
 | +57 | 17.59 | 25.36 | 7.77 | 20 | 6 |
@@ -42,9 +42,9 @@ Chronological prediction on the last 257 rated matches: Brier 0.209 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,495** .sdfz files. Preserved **1,565** qualifying match entries. Rated **1,278**; excluded **287** pending review or because the result/layout/data is unsuitable.
+Scanned **5,497** .sdfz files. Preserved **1,567** qualifying match entries. Rated **1,280**; excluded **287** pending review or because the result/layout/data is unsuitable.
 
-Rated results: **565 human wins**, **713 AI wins**. Humans rated: **2,017**.
+Rated results: **566 human wins**, **714 AI wins**. Humans rated: **2,020**.
 
 SMRTBARb +50 is fixed at **mu 21, sigma 1, match rating 20** for each of the eight seats. All rated entities connect to that anchor through the match graph. Human priors are mu 25, sigma 25/3; lobby PvP ratings are preserved as context, not used as BarbOS priors.
 
@@ -56,13 +56,13 @@ Every bonus/configuration uses a fixed seed, sigma=1. Non-anchor seeds are provi
 |---:|---:|---:|---:|---:|---:|
 | +10 | 22.81 (fixed) | 23.81 | 1.00 | 1 | 0 |
 | +15 | 24.99 (fixed) | 25.99 | 1.00 | 1 | 1 |
-| +25 | 25.86 (fixed) | 26.86 | 1.00 | 36 | 23 |
+| +25 | 25.86 (fixed) | 26.86 | 1.00 | 37 | 24 |
 | +30 | 21.09 (fixed) | 22.09 | 1.00 | 27 | 15 |
 | +35 | 27.75 (fixed) | 28.75 | 1.00 | 92 | 68 |
 | +40 | 21.51 (fixed) | 22.51 | 1.00 | 20 | 4 |
 | +45 | 21.21 (fixed) | 22.21 | 1.00 | 28 | 13 |
 | +48 | 22.70 (fixed) | 23.70 | 1.00 | 1 | 0 |
-| +50 | 20.00 (fixed) | 21.00 | 1.00 | 376 | 200 |
+| +50 | 20.00 (fixed) | 21.00 | 1.00 | 377 | 200 |
 | +52 | 21.75 (fixed) | 22.75 | 1.00 | 8 | 4 |
 | +55 | 27.16 (fixed) | 28.16 | 1.00 | 245 | 151 |
 | +57 | 21.34 (fixed) | 22.34 | 1.00 | 20 | 6 |
@@ -110,9 +110,9 @@ Counts overlap: a match may have several flags.
 
 ## Forward evaluation
 
-Seeds were calibrated on 630 earlier eligible matches; 627 later matches were predicted before their human rating updates.
+Seeds were calibrated on 630 earlier eligible matches; 629 later matches were predicted before their human rating updates.
 
-Mean predicted human win probability: 48.8%; observed human wins: 42.6%. Brier score: 0.278, versus 0.250 for constant 50% predictions (lower is better).
+Mean predicted human win probability: 48.9%; observed human wins: 42.6%. Brier score: 0.278, versus 0.250 for constant 50% predictions (lower is better).
 
 4 heldout matches used at least one uncalibrated default seed. Detailed evaluation by map, configuration, team size and probability bin is in data/prediction_evaluation.json.
 
