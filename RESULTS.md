@@ -2,9 +2,9 @@
 
 ## Primary ratings: all bots learn, +50 seeded 21 then varies (owner 2026-11-24)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,289** matches, **2,034** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,290** matches, **2,034** humans.
 
-Chronological prediction on the last 258 rated matches: Brier 0.206 vs 0.250 for constant 50%; mean predicted human win 38.0%, observed 40.3%.
+Chronological prediction on the last 258 rated matches: Brier 0.206 vs 0.250 for constant 50%; mean predicted human win 38.3%, observed 40.7%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
@@ -21,6 +21,7 @@ Chronological prediction on the last 258 rated matches: Brier 0.206 vs 0.250 for
 | +50 | 21.25 | 25.07 | 3.81 | 377 | 200 |
 | +51 | 16.20 | 24.50 | 8.30 | 1 | 0 |
 | +52 | 15.93 | 23.91 | 7.98 | 9 | 4 |
+| +53 | 16.49 | 24.81 | 8.32 | 1 | 0 |
 | +55 | 23.18 | 27.62 | 4.43 | 245 | 151 |
 | +57 | 17.59 | 25.36 | 7.77 | 20 | 6 |
 | +58 | 20.41 | 28.45 | 8.05 | 8 | 6 |
@@ -43,7 +44,7 @@ Chronological prediction on the last 258 rated matches: Brier 0.206 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,501** .sdfz files. Preserved **1,570** qualifying match entries. Rated **1,281**; excluded **289** pending review or because the result/layout/data is unsuitable.
+Scanned **5,502** .sdfz files. Preserved **1,571** qualifying match entries. Rated **1,281**; excluded **290** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **567 human wins**, **714 AI wins**. Humans rated: **2,025**.
 
