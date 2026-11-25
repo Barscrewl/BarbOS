@@ -12,10 +12,10 @@
  10  FRODODOR                29.32  35.84  6.51   48   32-16
  11  [APM]erevos             29.04  36.06  7.01   27    20-7
  12  [V]ic                   28.88  34.50  5.63   93   65-28
- 13  Vinagrito               28.64  35.17  6.53   33   21-12
- 14  SK10                    28.41  35.39  6.98   29    22-7
- 15  [iS]BarscrewlSports     28.07  33.85  5.78   88   56-32
- 16  quejour                 27.95  34.24  6.30   42   25-17
+ 13  SK10                    28.41  35.39  6.98   29    22-7
+ 14  [iS]BarscrewlSports     28.07  33.85  5.78   88   56-32
+ 15  quejour                 27.95  34.24  6.30   42   25-17
+ 16  Vinagrito               27.87  34.36  6.48   34   21-13
  17  Rhinehard               27.69  34.58  6.88   46   34-12
  18  No_Air                  27.26  33.21  5.95   67   37-30
  19  Sinobi                  26.17  31.53  5.36  102   56-46
@@ -26,9 +26,9 @@
  24  Kuuverty                25.36  32.81  7.45   18    12-6
  25  hatow                   24.95  32.06  7.11   30   20-10
   ...
-103  Mardock *               13.80  21.37  7.56    3     0-3
+104  Mardock *               13.83  21.37  7.54    3     0-3
   ...
-128  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
+129  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 3) (sigma 7.56 = median of 15-game players)
+* Mardock: as if 15 games (real: 3) (sigma 7.54 = median of 15-game players)
 ```
