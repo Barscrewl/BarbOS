@@ -2,7 +2,7 @@
 
 Uses the same model and call as the sync's varying run (varying_ratings.py): OpenSkill 5.0.1
 PlackettLuce, model.predict_win([humans, barbs]), with every barb seat as its own player at that
-bonus's current mu/sigma. Ratings come from data/varying/ratings.json (rewritten by every sync).
+bonus's current mu/sigma (+50 included: since 2026-11-24 it is seeded at 21 and varies). Ratings come from data/varying/ratings.json (rewritten by every sync).
 Unknown humans get the new-player prior (mu 25, sigma 25/3), the same start a first game gets.
 A bonus never rated yet starts from its seed mean in data/bot_seeds.json with sigma 25/3.
 
@@ -16,7 +16,6 @@ from openskill.models import PlackettLuce
 
 ROOT = Path(__file__).resolve().parent
 NEW_MU, NEW_SIGMA = 25.0, 25 / 3
-ANCHOR_BONUS = 50
 
 
 def norm(n): return n.strip().lower()
@@ -86,7 +85,6 @@ def parse_barbs(spec, count):
 
 
 def bot_rating(bonus, bots, seeds):
-    if bonus == ANCHOR_BONUS: return 21.0, 1.0, 'fixed anchor'
     r = bots.get(bonus)
     if r: return r['mu'], r['sigma'], f"{r['games']} games"
     seed = next((s for k, s in seeds.items() if k.endswith(f':bonus:{bonus:g}')), None)

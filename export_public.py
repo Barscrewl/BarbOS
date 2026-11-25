@@ -53,7 +53,8 @@ def generate(ratings_dir=ROOT/'data'/'varying',p=ROOT/'public'):
         matches.append(dict(match_id=m['match_id'],started_at_utc=m['started_at_utc'],started_at_local=m['started_at_local'],map=m['map'],duration_seconds=m['duration_seconds'],human_count=len(m['players']),ai_team=summary['ai_team'],shared_bonus_percent=summary['shared_bonus_percent'],mixed_bonuses=summary['mixed_bonuses'],ai_count=summary['ai_count'],ai_composition=summary['composition'],observed_result=m['observed_outcome']['result'],rated=m['match_id'] in used,exclusion_reasons=' | '.join(excluded.get(m['match_id'],[]))))
     write_csv(p/'matches.csv',matches)
     assert all('SMRTBARbstable(' not in r['name'] for r in bots)
-    assert next(r for r in bots if r['bonus_percent']==50)['match_rating']==20 and next(r for r in bots if r['bonus_percent']==50)['fixed']
+    if ratings_dir==ROOT/'data':  # frozen-seed run keeps +50 fixed at 21/1; the primary varying run lets it vary since 2026-11-24
+        assert next(r for r in bots if r['bonus_percent']==50)['match_rating']==20 and next(r for r in bots if r['bonus_percent']==50)['fixed']
     print(f'Published exports: {len(rows)} ratings, {len(bots)} bonus configurations, {len(matches)} match summaries')
 if __name__=='__main__':
     generate()

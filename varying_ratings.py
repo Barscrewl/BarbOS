@@ -1,5 +1,6 @@
 """Primary BarbOS run (owner 2026-11-12): every bot configuration's mu AND sigma vary
-across matches; only SMRTBARb +50 stays fixed at mu 21, sigma 1.
+across matches. Since 2026-11-24 (owner) SMRTBARb +50 is no longer fixed: it starts at mu 21 with the default
+sigma 25/3 and then varies like every other configuration (anchor_vary_analysis.py variant C predicted best).
 
 Same OpenSkill 5.0.1 PlackettLuce, chronological, starting rosters, same exclusions.
 Each bot configuration starts from its seed mean in data/bot_seeds.json with the default
@@ -13,6 +14,7 @@ from openskill.models import PlackettLuce
 import barbos, fixed_ratings as fr
 
 BOT_START_SIGMA = 25 / 3
+ANCHOR_START_MU = 21.0  # +50 seed mean (was fixed 21/1 until 2026-11-24)
 
 def run(folder=barbos.ROOT / 'data'):
     if openskill.__version__ != '5.0.1': raise ValueError('Requires openskill==5.0.1')
@@ -24,7 +26,7 @@ def run(folder=barbos.ROOT / 'data'):
     anchor = fr.ANCHOR
 
     def start(key):
-        if key == anchor: return (21.0, 1.0)
+        if key == anchor: return (ANCHOR_START_MU, BOT_START_SIGMA)
         if key.startswith('ai:'):
             seed = seeds['seeds'].get(key)
             return (seed['mu'] if seed else 25.0, BOT_START_SIGMA)
@@ -34,7 +36,7 @@ def run(folder=barbos.ROOT / 'data'):
         if key not in state:
             state[key] = start(key)
             records[key] = dict(key=key, names=[], games=0, wins=0, losses=0, seat_appearances=0, first_match=None, last_match=None,
-                                fixed=key == anchor, start_mu=state[key][0], start_sigma=state[key][1],
+                                fixed=False, start_mu=state[key][0], start_sigma=state[key][1],
                                 seed_status=seeds['seeds'].get(key, {}).get('seed_status') if key.startswith('ai:') else None,
                                 seed_version=seeds['seed_version'] if key.startswith('ai:') else None)
         if name not in records[key]['names']: records[key]['names'].append(name)
@@ -60,14 +62,12 @@ def run(folder=barbos.ROOT / 'data'):
         for k, r in zip(hkeys + akeys, list(new_h) + list(new_b)): grouped[k].append(r)
         counts = collections.Counter(hkeys + akeys); deltas = []
         for key, rs in grouped.items():
-            if key == anchor: state[key] = (21.0, 1.0)
-            else: state[key] = (sum(r.mu for r in rs) / len(rs), sum(r.sigma for r in rs) / len(rs))
+            state[key] = (sum(r.mu for r in rs) / len(rs), sum(r.sigma for r in rs) / len(rs))
             rec = records[key]; rec['games'] += 1; rec['seat_appearances'] += counts[key]
             win = (not key.startswith('ai:')) == (result == 'human_win')
             rec['wins'] += int(win); rec['losses'] += int(not win)
             rec['first_match'] = rec['first_match'] or m['started_at_utc']; rec['last_match'] = m['started_at_utc']
-            deltas.append(dict(key=key, before_mu=before[key][0], before_sigma=before[key][1], after_mu=state[key][0], after_sigma=state[key][1], mu_delta=state[key][0] - before[key][0], seat_count=counts[key], fixed=key == anchor))
-        assert state.get(anchor, (21.0, 1.0)) == (21.0, 1.0)
+            deltas.append(dict(key=key, before_mu=before[key][0], before_sigma=before[key][1], after_mu=state[key][0], after_sigma=state[key][1], mu_delta=state[key][0] - before[key][0], seat_count=counts[key], fixed=False))
         history.append(dict(match_id=m['match_id'], started_at_utc=m['started_at_utc'], map=m['map'], human_count=len(hp), ai_count=len(bots), ai_keys=sorted(set(akeys)), result=result, ranks=ranks, predicted_human_win_probability=predicted, ratings=deltas, review=review))
 
     get(anchor, 'SMRTBARb +50')
@@ -82,9 +82,9 @@ def run(folder=barbos.ROOT / 'data'):
         ratings.append(rec | dict(mu=mu, sigma=sigma, match_rating=mu - sigma, leaderboard_rating=mu - 3 * sigma, connected_to_anchor=key in anchored))
     ratings.sort(key=lambda r: r['match_rating'], reverse=True)
     metadata = dict(generated_at=dt.datetime.now(barbos.TZ).isoformat(), openskill_version=openskill.__version__, model='PlackettLuce',
-                    policy='All bot configurations learn (mu and sigma vary); only SMRTBARb +50 fixed at mu 21, sigma 1. Human posteriors persist.',
+                    policy='All bot configurations learn (mu and sigma vary); SMRTBARb +50 seeded at mu 21, sigma 25/3 then varies (owner 2026-11-24). Human posteriors persist.',
                     parameters=dict(mu=25, sigma=25 / 3, beta=25 / 6, tau=25 / 300, kappa=0.0001),
-                    anchor=dict(key=anchor, mu=21, sigma=1, match_rating=20, per_ai_seat=True),
+                    anchor=dict(key=anchor, start_mu=ANCHOR_START_MU, start_sigma=BOT_START_SIGMA, fixed=False, per_ai_seat=True),
                     human_initial_prior=dict(mu=25, sigma=25 / 3),
                     bot_initial_prior=dict(mu='seed mean from bot_seeds.json (25 if none)', sigma=BOT_START_SIGMA),
                     shared_ai_parameter_update='Average posterior mu and sigma across the seats of each configuration, once per match (tied-seat approximation).',
