@@ -26,9 +26,9 @@
  24  Kuuverty                25.36  32.81  7.45   18    12-6
  25  hatow                   24.95  32.06  7.11   30   20-10
   ...
-102  Mardock *               13.83  21.37  7.54    3     0-3
+103  Mardock *               13.80  21.37  7.56    3     0-3
   ...
-127  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
+128  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 3) (sigma 7.54 = median of 15-game players)
+* Mardock: as if 15 games (real: 3) (sigma 7.56 = median of 15-game players)
 ```
