@@ -1,36 +1,34 @@
 ```
   #  Player                     OS     mu sigma    G     W-L
-  1  Sinbearer               35.27  41.58  6.32   52   39-13
-  2  Aslan3                  32.98  39.64  6.66   46    41-5
-  3  KingBenjai              31.78  39.04  7.25   26    21-5
-  4  Pyroglacious            29.97  36.46  6.48   45    36-9
-  5  Skullhead               29.85  36.46  6.61   37   25-12
-  6  [Crd]MourningPhoenix    29.72  36.35  6.64   40   30-10
-  7  [SMRT]SharpPencil       28.21  32.54  4.33  189  101-88
-  8  Rhinehard               28.02  34.89  6.87   46   34-12
-  9  SK10                    26.96  33.94  6.98   29    22-7
- 10  FRODODOR                26.47  32.83  6.36   48   32-16
- 11  Dive                    26.25  30.62  4.37  161   94-67
- 12  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
- 13  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
- 14  No_Air                  24.57  30.67  6.10   63   35-28
- 15  SauceDispenser          24.29  31.92  7.62   16    10-6
- 16  Sinobi                  23.16  28.36  5.20  102   56-46
- 17  Knochentroke            23.04  28.84  5.80   75   48-27
- 18  [APM]erevos             22.82  29.72  6.89   27    20-7
- 19  [iS]BarscrewlSports     22.82  28.40  5.58   88   56-32
- 20  MVPete                  22.69  30.11  7.41   20    15-5
- 21  Erekim                  22.64  30.33  7.69   15    10-5
- 22  hatow                   22.16  29.15  6.99   30   20-10
- 23  Covewolf                22.14  28.46  6.32   45   27-18
- 24  Vinagrito               22.09  28.48  6.39   33   21-12
- 25  qruntingsquid           21.89  29.43  7.54   18    12-6
+  1  Aslan3                  38.56  45.14  6.58   46    41-5
+  2  Sinbearer               37.49  43.86  6.37   52   39-13
+  3  Dive                    34.87  39.31  4.44  161   94-67
+  4  Pyroglacious            33.93  40.49  6.57   45    36-9
+  5  [SMRT]SharpPencil       33.87  38.27  4.40  189  101-88
+  6  [Crd]MourningPhoenix    33.24  39.87  6.62   40   30-10
+  7  KingBenjai              31.40  38.65  7.25   26    21-5
+  8  Skullhead               30.77  37.38  6.61   38   26-12
+  9  NoBrainCellGaming       29.67  35.23  5.56   85   48-37
+ 10  FRODODOR                29.32  35.84  6.51   48   32-16
+ 11  [APM]erevos             29.04  36.06  7.01   27    20-7
+ 12  [V]ic                   28.88  34.50  5.63   93   65-28
+ 13  Vinagrito               28.64  35.17  6.53   33   21-12
+ 14  SK10                    28.41  35.39  6.98   29    22-7
+ 15  [iS]BarscrewlSports     28.07  33.85  5.78   88   56-32
+ 16  quejour                 27.95  34.24  6.30   42   25-17
+ 17  Rhinehard               27.69  34.58  6.88   46   34-12
+ 18  No_Air                  26.84  32.93  6.09   63   35-28
+ 19  Sinobi                  26.17  31.53  5.36  102   56-46
+ 20  Knochentroke            26.04  31.90  5.86   75   48-27
+ 21  EVILBROCCOLI            25.88  33.19  7.31   17    11-6
+ 22  ShhDontTalkToMe         25.67  32.79  7.12   22    15-7
+ 23  Covewolf                25.66  32.23  6.57   45   27-18
+ 24  Kuuverty                25.36  32.81  7.45   18    12-6
+ 25  hatow                   24.95  32.06  7.11   30   20-10
   ...
- 30  [V]ic                   20.95  26.44  5.48   93   65-28
+102  Mardock *               13.83  21.37  7.54    3     0-3
   ...
- 91  Mardock *               13.00  20.41  7.42    3     0-3
-  ...
-100  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
+127  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 3) (sigma 7.42 = median of 15-game players)
+* Mardock: as if 15 games (real: 3) (sigma 7.54 = median of 15-game players)
 ```
