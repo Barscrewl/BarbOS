@@ -1,6 +1,6 @@
 ```
   #  Player                     OS     mu sigma    G     W-L
-  1  Aslan3                  38.56  45.14  6.58   46    41-5
+  1  Aslan3                  38.89  45.44  6.55   47    42-5
   2  Sinbearer               37.49  43.86  6.37   52   39-13
   3  Dive                    35.16  39.59  4.43  162   95-67
   4  Pyroglacious            33.93  40.49  6.57   45    36-9
@@ -8,7 +8,7 @@
   6  [Crd]MourningPhoenix    33.24  39.87  6.62   40   30-10
   7  KingBenjai              31.40  38.65  7.25   26    21-5
   8  Skullhead               30.77  37.38  6.61   38   26-12
-  9  [APM]erevos             29.71  36.67  6.96   28    21-7
+  9  [APM]erevos             30.08  37.01  6.93   29    22-7
  10  NoBrainCellGaming       29.67  35.23  5.56   85   48-37
  11  FRODODOR                29.32  35.84  6.51   48   32-16
  12  [V]ic                   28.88  34.50  5.63   93   65-28
@@ -18,7 +18,7 @@
  16  quejour                 27.95  34.24  6.30   42   25-17
  17  Rhinehard               27.69  34.58  6.88   46   34-12
  18  No_Air                  27.26  33.21  5.95   67   37-30
- 19  Knochentroke            26.49  32.33  5.83   76   49-27
+ 19  Knochentroke            26.75  32.56  5.81   77   50-27
  20  Sinobi                  26.17  31.53  5.36  102   56-46
  21  EVILBROCCOLI            25.88  33.19  7.31   17    11-6
  22  ShhDontTalkToMe         25.67  32.79  7.12   22    15-7
@@ -26,9 +26,9 @@
  24  Kuuverty                25.36  32.81  7.45   18    12-6
  25  hatow                   24.95  32.06  7.11   30   20-10
   ...
-104  Mardock *               13.83  21.37  7.54    3     0-3
+104  Mardock *               13.85  21.37  7.52    3     0-3
   ...
 129  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 3) (sigma 7.54 = median of 15-game players)
+* Mardock: as if 15 games (real: 3) (sigma 7.52 = median of 15-game players)
 ```
