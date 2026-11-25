@@ -9,11 +9,11 @@
   7  [SMRT]SharpPencil       28.21  32.54  4.33  189  101-88
   8  Rhinehard               28.02  34.89  6.87   46   34-12
   9  SK10                    26.96  33.94  6.98   29    22-7
- 10  Dive                    26.49  30.86  4.37  160   94-66
- 11  FRODODOR                26.47  32.83  6.36   48   32-16
- 12  No_Air                  25.03  31.15  6.12   62   35-27
- 13  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
- 14  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
+ 10  FRODODOR                26.47  32.83  6.36   48   32-16
+ 11  Dive                    26.25  30.62  4.37  161   94-67
+ 12  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
+ 13  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
+ 14  No_Air                  24.57  30.67  6.10   63   35-28
  15  SauceDispenser          24.29  31.92  7.62   16    10-6
  16  Sinobi                  23.16  28.36  5.20  102   56-46
  17  Knochentroke            23.04  28.84  5.80   75   48-27
@@ -28,9 +28,9 @@
   ...
  30  [V]ic                   20.95  26.44  5.48   93   65-28
   ...
- 91  Mardock *               12.99  20.41  7.43    3     0-3
+ 91  Mardock *               13.00  20.41  7.42    3     0-3
   ...
 100  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 3) (sigma 7.43 = median of 15-game players)
+* Mardock: as if 15 games (real: 3) (sigma 7.42 = median of 15-game players)
 ```
