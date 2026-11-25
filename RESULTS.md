@@ -2,9 +2,9 @@
 
 ## Primary ratings: all bots learn, +50 seeded 21 then varies (owner 2026-11-24)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,291** matches, **2,035** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,292** matches, **2,036** humans.
 
-Chronological prediction on the last 259 rated matches: Brier 0.205 vs 0.250 for constant 50%; mean predicted human win 38.5%, observed 40.9%.
+Chronological prediction on the last 259 rated matches: Brier 0.204 vs 0.250 for constant 50%; mean predicted human win 38.5%, observed 41.3%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
@@ -21,7 +21,7 @@ Chronological prediction on the last 259 rated matches: Brier 0.205 vs 0.250 for
 | +50 | 21.25 | 25.07 | 3.81 | 377 | 200 |
 | +51 | 16.20 | 24.50 | 8.30 | 1 | 0 |
 | +52 | 15.93 | 23.91 | 7.98 | 9 | 4 |
-| +53 | 16.00 | 24.28 | 8.28 | 2 | 0 |
+| +53 | 15.50 | 23.74 | 8.24 | 3 | 0 |
 | +55 | 23.18 | 27.62 | 4.43 | 245 | 151 |
 | +57 | 17.59 | 25.36 | 7.77 | 20 | 6 |
 | +58 | 20.41 | 28.45 | 8.05 | 8 | 6 |
@@ -44,7 +44,7 @@ Chronological prediction on the last 259 rated matches: Brier 0.205 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,503** .sdfz files. Preserved **1,572** qualifying match entries. Rated **1,281**; excluded **291** pending review or because the result/layout/data is unsuitable.
+Scanned **5,504** .sdfz files. Preserved **1,573** qualifying match entries. Rated **1,281**; excluded **292** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **567 human wins**, **714 AI wins**. Humans rated: **2,025**.
 
