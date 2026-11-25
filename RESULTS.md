@@ -2,9 +2,9 @@
 
 ## Primary ratings: all bots learn, +50 seeded 21 then varies (owner 2026-11-24)
 
-The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,287** matches, **2,033** humans.
+The published lists in public/ come from data/varying: every SMRTBARb bonus configuration's mu and sigma vary from match to match; +50 starts at mu 21, sigma 25/3 and varies too (fixed at 21/1 until 2026-11-24). Bots start from their seed mean (barbos-fixed-v2) with sigma 25/3. Rated **1,288** matches, **2,033** humans.
 
-Chronological prediction on the last 258 rated matches: Brier 0.208 vs 0.250 for constant 50%; mean predicted human win 37.6%, observed 39.9%.
+Chronological prediction on the last 258 rated matches: Brier 0.207 vs 0.250 for constant 50%; mean predicted human win 37.8%, observed 39.9%.
 
 | Bonus | Match rating (mu-sigma) | mu | sigma | Matches | AI wins |
 |---:|---:|---:|---:|---:|---:|
@@ -19,6 +19,7 @@ Chronological prediction on the last 258 rated matches: Brier 0.208 vs 0.250 for
 | +45 | 16.61 | 23.89 | 7.29 | 28 | 13 |
 | +48 | 14.45 | 22.73 | 8.28 | 1 | 0 |
 | +50 | 21.25 | 25.07 | 3.81 | 377 | 200 |
+| +51 | 16.20 | 24.50 | 8.30 | 1 | 0 |
 | +52 | 16.19 | 24.19 | 8.00 | 8 | 4 |
 | +55 | 23.18 | 27.62 | 4.43 | 245 | 151 |
 | +57 | 17.59 | 25.36 | 7.77 | 20 | 6 |
@@ -42,7 +43,7 @@ Chronological prediction on the last 258 rated matches: Brier 0.208 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,499** .sdfz files. Preserved **1,568** qualifying match entries. Rated **1,280**; excluded **288** pending review or because the result/layout/data is unsuitable.
+Scanned **5,500** .sdfz files. Preserved **1,569** qualifying match entries. Rated **1,280**; excluded **289** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **566 human wins**, **714 AI wins**. Humans rated: **2,024**.
 
