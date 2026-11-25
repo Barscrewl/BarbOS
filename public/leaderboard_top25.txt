@@ -14,8 +14,8 @@
  12  No_Air                  25.33  31.48  6.15   60   34-26
  13  [SMRT]IOS_Client        24.75  32.04  7.29   27   14-13
  14  NoBrainCellGaming       24.60  30.11  5.51   85   48-37
- 15  Knochentroke            24.11  29.96  5.84   72   47-25
- 16  SauceDispenser          23.64  31.30  7.65   15     9-6
+ 15  SauceDispenser          23.64  31.30  7.65   15     9-6
+ 16  Knochentroke            23.42  29.25  5.83   73   47-26
  17  Sinobi                  23.16  28.36  5.20  102   56-46
  18  [APM]erevos             22.82  29.72  6.89   27    20-7
  19  [iS]BarscrewlSports     22.82  28.40  5.58   88   56-32
@@ -28,9 +28,9 @@
   ...
  30  [V]ic                   20.95  26.44  5.48   93   65-28
   ...
- 79  Mardock *               14.37  21.79  7.43    2     0-2
+ 90  Mardock *               12.99  20.41  7.43    3     0-3
   ...
  99  [SMRT]Felnious          11.16  18.66  7.51   20    5-15
 
-* Mardock: as if 15 games (real: 2) (sigma 7.43 = median of 15-game players)
+* Mardock: as if 15 games (real: 3) (sigma 7.43 = median of 15-game players)
 ```
