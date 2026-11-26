@@ -44,7 +44,7 @@ Chronological prediction on the last 262 rated matches: Brier 0.200 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,528** .sdfz files. Preserved **1,596** qualifying match entries. Rated **1,295**; excluded **301** pending review or because the result/layout/data is unsuitable.
+Scanned **5,529** .sdfz files. Preserved **1,597** qualifying match entries. Rated **1,295**; excluded **302** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **569 human wins**, **726 AI wins**. Humans rated: **2,034**.
 
@@ -94,8 +94,8 @@ This is a custom anchored Plackett-Luce run, not BAR's official rating service o
 
 | Flag | Matches |
 |---|---:|
-| nondecisive_or_unknown_winner | 244 |
-| no_decisive_winner | 241 |
+| nondecisive_or_unknown_winner | 245 |
+| no_decisive_winner | 242 |
 | stop_or_cheat_signal_requires_review | 120 |
 | no_startplaying_packet | 105 |
 | shared_human_team_requires_model | 29 |
