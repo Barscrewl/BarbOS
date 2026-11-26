@@ -44,7 +44,7 @@ Chronological prediction on the last 262 rated matches: Brier 0.200 vs 0.250 for
 
 Cutoff: 2026-09-15T00:00:00-07:00 (Pacific).
 
-Scanned **5,522** .sdfz files. Preserved **1,591** qualifying match entries. Rated **1,294**; excluded **297** pending review or because the result/layout/data is unsuitable.
+Scanned **5,525** .sdfz files. Preserved **1,594** qualifying match entries. Rated **1,294**; excluded **300** pending review or because the result/layout/data is unsuitable.
 
 Rated results: **569 human wins**, **725 AI wins**. Humans rated: **2,032**.
 
@@ -84,7 +84,7 @@ Every bonus/configuration uses a fixed seed, sigma=1. Non-anchor seeds are provi
 
 ## Data limits
 
-117 matches have stop/cheat signals. Signals require review and do not establish wrongdoing. Four damaged gzip replays were recovered as partial match entries and excluded. Four in-period zero-byte files have no readable roster or cache and appear only in scan_manifest.json. No actual admin cheating judgments have been entered.
+120 matches have stop/cheat signals. Signals require review and do not establish wrongdoing. Four damaged gzip replays were recovered as partial match entries and excluded. Four in-period zero-byte files have no readable roster or cache and appear only in scan_manifest.json. No actual admin cheating judgments have been entered.
 
 The owner supplied the shared discussion text after the first run. The primary output now implements human-only persistence and frozen versioned opponent seeds. The initial joint-learning run is preserved under data/calibration_baseline. Public ratings and code are published on GitHub; raw replay data remains local.
 
@@ -94,9 +94,9 @@ This is a custom anchored Plackett-Luce run, not BAR's official rating service o
 
 | Flag | Matches |
 |---|---:|
-| nondecisive_or_unknown_winner | 240 |
-| no_decisive_winner | 237 |
-| stop_or_cheat_signal_requires_review | 117 |
+| nondecisive_or_unknown_winner | 243 |
+| no_decisive_winner | 240 |
+| stop_or_cheat_signal_requires_review | 120 |
 | no_startplaying_packet | 105 |
 | shared_human_team_requires_model | 29 |
 | additional_ai_participants | 8 |
