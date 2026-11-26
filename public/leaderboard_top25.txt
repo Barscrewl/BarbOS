@@ -10,14 +10,14 @@
   8  Skullhead               30.77  37.38  6.61   38   26-12
   9  [APM]erevos             30.22  37.14  6.92   30    23-7
  10  NoBrainCellGaming       29.67  35.23  5.56   85   48-37
- 11  FRODODOR                29.32  35.84  6.51   48   32-16
- 12  SK10                    29.14  36.08  6.94   32    25-7
- 13  [V]ic                   29.04  34.61  5.57   98   69-29
+ 11  [V]ic                   29.53  35.07  5.54   99   70-29
+ 12  FRODODOR                29.32  35.84  6.51   48   32-16
+ 13  SK10                    29.14  36.08  6.94   32    25-7
  14  Vinagrito               28.52  34.96  6.44   35   22-13
  15  quejour                 28.28  34.48  6.20   46   28-18
  16  [iS]BarscrewlSports     28.07  33.85  5.78   88   56-32
- 17  No_Air                  27.26  33.21  5.95   67   37-30
- 18  Rhinehard               27.20  34.01  6.81   49   36-13
+ 17  Rhinehard               27.94  34.70  6.76   50   37-13
+ 18  No_Air                  27.26  33.21  5.95   67   37-30
  19  Knochentroke            26.75  32.56  5.81   77   50-27
  20  ShhDontTalkToMe         26.29  33.38  7.09   24    17-7
  21  Sinobi                  26.17  31.53  5.36  102   56-46
@@ -26,9 +26,9 @@
  24  hatow                   25.44  32.53  7.09   32   22-10
  25  Kuuverty                25.36  32.81  7.45   18    12-6
   ...
- 96  Mardock *               15.13  22.69  7.57    5     2-3
+ 90  Mardock *               16.09  23.66  7.57    6     3-3
   ...
 132  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 5) (sigma 7.57 = median of 15-game players)
+* Mardock: as if 15 games (real: 6) (sigma 7.57 = median of 15-game players)
 ```
