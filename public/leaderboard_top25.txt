@@ -26,9 +26,9 @@
  24  hatow                   25.44  32.53  7.09   32   22-10
  25  [APM]Nekuodah           25.25  32.89  7.64   15    13-2
   ...
- 90  Mardock *               16.11  23.66  7.54    6     3-3
+ 90  Mardock *               16.14  23.66  7.52    6     3-3
   ...
-133  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
+134  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 6) (sigma 7.54 = median of 15-game players)
+* Mardock: as if 15 games (real: 6) (sigma 7.52 = median of 15-game players)
 ```
