@@ -4,7 +4,7 @@
   2  Sinbearer               37.49  43.86  6.37   52   39-13
   3  Pyroglacious            36.62  43.01  6.39   54    45-9
   4  Dive                    34.83  39.24  4.41  165   97-68
-  5  [SMRT]SharpPencil       33.32  37.71  4.38  190  101-89
+  5  [SMRT]SharpPencil       33.67  38.04  4.37  191  102-89
   6  [Crd]MourningPhoenix    33.24  39.87  6.62   40   30-10
   7  [V]ic                   31.80  37.17  5.37  108   79-29
   8  KingBenjai              31.40  38.65  7.25   26    21-5
@@ -17,9 +17,9 @@
  15  NoBrainCellGaming       28.51  34.02  5.51   87   48-39
  16  Knochentroke            28.37  34.05  5.68   83   56-27
  17  EVILBROCCOLI            28.20  35.28  7.08   22    16-6
- 18  [iS]BarscrewlSports     28.07  33.85  5.78   89   56-33
- 19  Rhinehard               27.94  34.70  6.76   50   37-13
- 20  Hrii3y                  27.29  33.76  6.47   41   28-13
+ 18  Hrii3y                  28.07  34.49  6.42   42   29-13
+ 19  [iS]BarscrewlSports     28.07  33.85  5.78   89   56-33
+ 20  Rhinehard               27.94  34.70  6.76   50   37-13
  21  No_Air                  27.26  33.21  5.95   67   37-30
  22  ShhDontTalkToMe         27.01  33.98  6.97   26    18-8
  23  [APM]Nekuodah           26.60  34.11  7.51   17    15-2
