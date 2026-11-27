@@ -23,12 +23,12 @@
  21  No_Air                  27.26  33.21  5.95   67   37-30
  22  ShhDontTalkToMe         27.01  33.98  6.97   26    18-8
  23  [APM]Nekuodah           26.60  34.11  7.51   17    15-2
- 24  Sinobi                  26.17  31.53  5.36  102   56-46
- 25  eumelbeumel             25.67  32.55  6.88   32    23-9
+ 24  CnArmor                 26.20  33.49  7.30   16    12-4
+ 25  Sinobi                  26.17  31.53  5.36  102   56-46
   ...
- 91  Mardock *               16.14  23.66  7.52    6     3-3
+ 91  Mardock *               16.11  23.66  7.54    6     3-3
   ...
 135  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 6) (sigma 7.52 = median of 15-game players)
+* Mardock: as if 15 games (real: 6) (sigma 7.54 = median of 15-game players)
 ```
