@@ -26,9 +26,9 @@
  24  Sinobi                  26.17  31.53  5.36  102   56-46
  25  eumelbeumel             25.67  32.55  6.88   32    23-9
   ...
- 90  Mardock *               16.11  23.66  7.54    6     3-3
+ 91  Mardock *               16.14  23.66  7.52    6     3-3
   ...
-134  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
+135  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
-* Mardock: as if 15 games (real: 6) (sigma 7.54 = median of 15-game players)
+* Mardock: as if 15 games (real: 6) (sigma 7.52 = median of 15-game players)
 ```
