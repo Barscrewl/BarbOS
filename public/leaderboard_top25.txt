@@ -17,9 +17,9 @@
  15  NoBrainCellGaming       28.51  34.02  5.51   87   48-39
  16  Knochentroke            28.37  34.05  5.68   83   56-27
  17  EVILBROCCOLI            28.20  35.28  7.08   22    16-6
- 18  Hrii3y                  28.07  34.49  6.42   42   29-13
- 19  [iS]BarscrewlSports     28.07  33.85  5.78   89   56-33
- 20  Rhinehard               27.94  34.70  6.76   50   37-13
+ 18  [iS]BarscrewlSports     28.07  33.85  5.78   89   56-33
+ 19  Rhinehard               27.94  34.70  6.76   50   37-13
+ 20  Hrii3y                  27.42  33.79  6.37   43   29-14
  21  No_Air                  27.26  33.21  5.95   67   37-30
  22  ShhDontTalkToMe         27.01  33.98  6.97   26    18-8
  23  [APM]Nekuodah           26.60  34.11  7.51   17    15-2
