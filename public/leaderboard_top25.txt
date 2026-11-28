@@ -21,14 +21,14 @@
  19  Hrii3y                  27.42  33.79  6.37   43   29-14
  20  No_Air                  27.26  33.21  5.95   67   37-30
  21  CnArmor                 27.15  34.38  7.23   17    13-4
- 22  ShhDontTalkToMe         27.01  33.98  6.97   26    18-8
- 23  [APM]Nekuodah           26.60  34.11  7.51   17    15-2
+ 22  [APM]Nekuodah           26.60  34.11  7.51   17    15-2
+ 23  ShhDontTalkToMe         26.30  33.21  6.92   27    18-9
  24  Rhinehard               26.25  32.89  6.64   52   37-15
  25  Sinobi                  26.17  31.53  5.36  102   56-46
   ...
  94  Mardock *               16.14  23.66  7.52    6     3-3
   ...
-135  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
+136  [SMRT]Felnious          10.44  17.90  7.46   20    5-15
 
 * Mardock: as if 15 games (real: 6) (sigma 7.52 = median of 15-game players)
 ```
